@@ -413,20 +413,28 @@ export const POLICY_BRIEFS = [
 // IMPACT METRICS
 // ============================================================
 export const IMPACT_METRICS = {
-  livesSaved: 127,
-  severeCasesPrevented: 543,
-  costAvoidance: 2_450_000,
-  interventionCost: 890_000,
-  roi: 2.75,
-  facilitiesImproved: 167,
-  populationProtected: 4_200_000,
-  responseTimeAvgDays: 4.2,
-  chwsSupported: 2_250,
+  // Pilot (Turkana County, Kenya) — operational figures
+  pilotPopulationCovered: 417_706,       // 99,453 households × 4.2 avg HH size (Kenya Census 2019)
   householdsReached: 99_453,
+  chwsSupported: 2_250,
+  childrenUnder5InCatchment: 83_541,     // 20% of pilot population (Kenya under-5 share, KNBS 2019)
+  // Surveillance catchment (geographic, 10 monitored Kenya counties)
+  surveillanceCatchmentPopulation: 10_613_319,
+  surveillanceCatchmentChildren: 2_122_664, // 20% of catchment population
+  // Platform-wide
   countriesActive: 5,
+  facilitiesMonitored: 167,
   alertsGenerated: 847,
   alertsActedOn: 731,
   forecastAccuracy: 87.8,
+  responseTimeAvgDays: 4.2,
+  // Economic
+  costAvoidance: 2_450_000,
+  interventionCost: 890_000,
+  roi: 2.75,
+  // Child health outcomes (pilot, Turkana)
+  severeMalariaCasesPrevented: 543,      // Children under 5 primary beneficiaries (76% of malaria deaths)
+  livesSaved: 127,
 };
 
 // ============================================================

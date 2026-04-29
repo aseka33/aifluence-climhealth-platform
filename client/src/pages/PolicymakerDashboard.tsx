@@ -43,7 +43,7 @@ export default function PolicymakerDashboard() {
           {[
             { label: "Total Malaria Cases (2024)", value: "37.1M", sub: "Across 5 countries", color: "text-red-500" },
             { label: "Cost Avoidance (2025)", value: "$2.45M", sub: "Through early warning", color: "text-green-500" },
-            { label: "Population Protected", value: "4.2M", sub: "Under active surveillance", color: "text-primary" },
+            { label: "Children Under 5 (Catchment)", value: "2.1M", sub: "10-county surveillance area", color: "text-primary" },
             { label: "Avg Response Time", value: "4.2 days", sub: "Alert to intervention", color: "text-orange-500" },
           ].map((item, i) => (
             <Card key={i} className="stat-card text-center">

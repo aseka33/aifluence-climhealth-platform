@@ -397,10 +397,10 @@ export default function Dashboard() {
             </CardHeader>
             <CardContent className="space-y-3">
               {[
-                { icon: Heart, label: "Lives Saved", value: "127", color: "text-red-500" },
+                { icon: Heart, label: "Lives Saved (Pilot)", value: "127", color: "text-red-500" },
                 { icon: ShieldCheck, label: "Severe Cases Prevented", value: "543", color: "text-green-500" },
-                { icon: Users, label: "Population Protected", value: "4.2M", color: "text-primary" },
-                { icon: Building2, label: "Facilities Improved", value: "167", color: "text-orange-500" },
+                { icon: Users, label: "Children Under 5 (Pilot)", value: "83,541", color: "text-primary" },
+                { icon: Building2, label: "Facilities Monitored", value: "167", color: "text-orange-500" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center justify-between">
                   <div className="flex items-center gap-2">

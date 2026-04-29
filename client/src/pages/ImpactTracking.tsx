@@ -10,10 +10,10 @@ import {
 import { COUNTRIES } from "@/lib/data";
 
 const IMPACT_STATS = [
-  { label: "Lives Protected", value: "2.1M", sub: "Under active surveillance", icon: Heart, color: "text-red-500", bg: "bg-red-50", border: "border-l-red-500" },
-  { label: "CHWs Empowered", value: "2,250", sub: "Across 5 countries", icon: Users, color: "text-primary", bg: "bg-primary/10", border: "border-l-primary" },
-  { label: "Households Covered", value: "99,453", sub: "Under active monitoring", icon: ShieldCheck, color: "text-green-500", bg: "bg-green-50", border: "border-l-green-500" },
-  { label: "ROI per $1 Invested", value: "$12.50", sub: "Economic return", icon: DollarSign, color: "text-yellow-600", bg: "bg-yellow-50", border: "border-l-yellow-500" },
+  { label: "Children Under 5 (Pilot)", value: "83,541", sub: "Turkana County pilot catchment", icon: Heart, color: "text-red-500", bg: "bg-red-50", border: "border-l-red-500" },
+  { label: "CHWs Empowered", value: "2,250", sub: "Turkana pilot, scalable to 5 countries", icon: Users, color: "text-primary", bg: "bg-primary/10", border: "border-l-primary" },
+  { label: "Households Covered", value: "99,453", sub: "Under active CHW monitoring", icon: ShieldCheck, color: "text-green-500", bg: "bg-green-50", border: "border-l-green-500" },
+  { label: "ROI per $1 Invested", value: "$2.75", sub: "Pilot period, Turkana County", icon: DollarSign, color: "text-yellow-600", bg: "bg-yellow-50", border: "border-l-yellow-500" },
   { label: "Prediction Accuracy", value: "87.8%", sub: "7-day malaria forecast", icon: Activity, color: "text-teal-500", bg: "bg-teal-50", border: "border-l-teal-500" },
   { label: "Advance Warning", value: "7–30 days", sub: "Before outbreak peaks", icon: TrendingUp, color: "text-orange-500", bg: "bg-orange-50", border: "border-l-orange-500" },
 ];

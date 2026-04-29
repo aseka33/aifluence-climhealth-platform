@@ -104,8 +104,8 @@ const STATS = [
   { value: "18", label: "Diseases Tracked", sub: "Climate-sensitive conditions" },
   { value: "87.8%", label: "Forecast Accuracy", sub: "7-day malaria prediction" },
   { value: "2,250", label: "CHWs Supported", sub: "Frontline health workers" },
-  { value: "99,453", label: "Households", sub: "Under active surveillance" },
-  { value: "$12.50", label: "ROI per $1", sub: "Invested in early warning" },
+  { value: "83,541", label: "Children Under 5", sub: "In pilot surveillance catchment" },
+  { value: "417,706", label: "People Covered", sub: "Turkana County pilot" },
 ];
 
 const DPG_STANDARDS = [
@@ -171,7 +171,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg text-white/80 mb-8 max-w-2xl leading-relaxed">
-              Protecting 4.2 million people across 5 countries by predicting climate-sensitive disease outbreaks 7–30 days in advance. Built for frontline health workers, policymakers, and communities.
+              Predicting climate-sensitive disease outbreaks 7–30 days in advance to protect children and communities across Africa. Operational pilot covering 417,706 people in Turkana County, Kenya, with a surveillance catchment of 10.6 million across 10 counties. Built for frontline health workers, policymakers, and communities.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/dashboard">
@@ -292,10 +292,10 @@ export default function Home() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { icon: Heart, value: "127", label: "Lives Saved", sub: "Estimated through early intervention", color: "text-red-500", bg: "bg-red-50" },
-            { icon: ShieldCheck, value: "543", label: "Severe Cases Prevented", sub: "Through pre-emptive treatment", color: "text-green-500", bg: "bg-green-50" },
-            { icon: Users, value: "4.2M", label: "People Protected", sub: "Under active surveillance", color: "text-primary", bg: "bg-primary/10" },
-            { icon: TrendingUp, value: "$12.50", label: "ROI per $1 Invested", sub: "In early warning systems", color: "text-orange-500", bg: "bg-orange-50" },
+            { icon: Heart, value: "127", label: "Lives Saved", sub: "Pilot estimate, Turkana County", color: "text-red-500", bg: "bg-red-50" },
+            { icon: ShieldCheck, value: "543", label: "Severe Cases Prevented", sub: "76% in children under 5 (WHO)", color: "text-green-500", bg: "bg-green-50" },
+            { icon: Users, value: "83,541", label: "Children Under 5", sub: "In Turkana pilot catchment", color: "text-primary", bg: "bg-primary/10" },
+            { icon: TrendingUp, value: "$2.75", label: "ROI per $1 Invested", sub: "Pilot period, Turkana County", color: "text-orange-500", bg: "bg-orange-50" },
           ].map((item, i) => (
             <Card key={i} className="text-center stat-card">
               <CardContent className="pt-6">
@@ -308,6 +308,52 @@ export default function Home() {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* Child Health Mandate */}
+      <section className="container py-16">
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <Badge className="bg-primary/10 text-primary border-primary/20 mb-4">Built for Children</Badge>
+            <h2 className="text-3xl font-bold mb-4">Why Children Are at the Centre</h2>
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              Children under 5 account for 76% of all malaria deaths in sub-Saharan Africa (WHO 2024). Climate change is accelerating the spread of malaria, cholera, and malnutrition — the three leading killers of young children in the region. AIfluence gives health systems the advance warning they need to act before children present with severe disease.
+            </p>
+            <div className="space-y-3">
+              {[
+                { stat: "76%", text: "of malaria deaths in Africa are children under 5 (WHO 2024)" },
+                { stat: "45M", text: "children at risk from climate-health crises in East Africa (UNICEF 2024)" },
+                { stat: "7–30 days", text: "advance warning gives time to pre-position ACTs and RDTs before children fall ill" },
+                { stat: "91.2%", text: "forecast accuracy for malnutrition — a child-specific climate-driven condition" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-4 p-3 bg-muted/40 rounded-lg border">
+                  <span className="text-primary font-bold text-sm min-w-[60px]">{item.stat}</span>
+                  <span className="text-sm text-muted-foreground">{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="space-y-4">
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="pt-4 pb-4">
+                <p className="text-sm font-semibold mb-1">Pilot: Turkana County, Kenya</p>
+                <p className="text-xs text-muted-foreground">83,541 children under 5 in active surveillance catchment. 2,250 CHWs trained to report suspected cases via SMS. 167 health facilities stocked based on AI-generated pre-positioning alerts.</p>
+              </CardContent>
+            </Card>
+            <Card className="border-l-4 border-l-green-500">
+              <CardContent className="pt-4 pb-4">
+                <p className="text-sm font-semibold mb-1">Scale: 10-County Surveillance Catchment</p>
+                <p className="text-xs text-muted-foreground">2.1 million children under 5 within the geographic surveillance catchment across 10 Kenyan counties. Platform designed to extend to 5 countries covering an estimated 12 million children under 5.</p>
+              </CardContent>
+            </Card>
+            <Card className="border-l-4 border-l-orange-500">
+              <CardContent className="pt-4 pb-4">
+                <p className="text-sm font-semibold mb-1">UNICEF Alignment</p>
+                <p className="text-xs text-muted-foreground">Directly addresses UNICEF's three priority climate-health threats for children: malaria, cholera, and malnutrition. Open-source, offline-capable, and designed for UNICEF's CHW delivery model.</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
