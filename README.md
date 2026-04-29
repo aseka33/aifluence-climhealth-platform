@@ -14,7 +14,7 @@ AIfluence processes WHO Global Health Observatory and World Bank climate data fo
 
 **Operational pilot:** Turkana County, Kenya — 2,250 Community Health Workers monitoring 99,453 households (417,706 people, including 83,541 children under 5).
 
-**Live platform:** https://climhealth-5ntjfbib.manus.space
+**Live platform:** https://www.ai-fluence.com
 
 ---
 
