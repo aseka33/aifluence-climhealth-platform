@@ -104,6 +104,16 @@ export default function Dashboard() {
         </div>
       </div>
 
+      {/* Coverage context banner */}
+      {country.coverageStatus === 'data' && (
+        <div className="mx-6 mt-4 px-4 py-3 bg-blue-50 border border-blue-200 rounded-lg flex items-start gap-3">
+          <Activity className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+          <p className="text-xs text-blue-800">
+            <span className="font-semibold">{country.name}: Data Platform Active.</span> WHO GHO and World Bank climate data are integrated and national-level forecasts are running. Community-level CHW deployment is planned for this country. Detailed pilot data (CHWs, facilities, households) reflects the Kenya Turkana County pilot.
+          </p>
+        </div>
+      )}
+
       <div className="p-6 space-y-6">
         {/* KPI cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

@@ -246,22 +246,28 @@ export default function Home() {
         <div className="container py-12">
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div>
-              <h2 className="text-3xl font-bold mb-3">Active Coverage</h2>
-              <p className="text-muted-foreground mb-6">
-                Operational across 5 countries in Eastern and Southern Africa, with county-level granularity in Kenya and district-level coverage expanding across the region.
+              <h2 className="text-3xl font-bold mb-3">Geographic Coverage</h2>
+              <p className="text-muted-foreground mb-4">
+                AIfluence processes WHO and World Bank climate-health data for 5 countries in East and Southern Africa. Kenya has an active community-level pilot in Turkana County. The remaining 4 countries have national-level data integrated and forecasts running, ready for community-level deployment.
               </p>
+              <div className="flex gap-3 mb-4">
+                <div className="flex items-center gap-1.5 text-xs"><span className="h-2.5 w-2.5 rounded-full bg-primary inline-block"></span> Operational pilot</div>
+                <div className="flex items-center gap-1.5 text-xs"><span className="h-2.5 w-2.5 rounded-full bg-blue-300 inline-block"></span> Data platform active</div>
+              </div>
               <div className="space-y-3">
                 {COUNTRIES.map((country) => (
-                  <div key={country.id} className="flex items-center justify-between p-3 bg-white rounded-lg border">
-                    <div className="flex items-center gap-3">
-                      <Globe className="h-4 w-4 text-primary" />
-                      <span className="font-medium text-sm">{country.name}</span>
-                      <span className="text-xs text-muted-foreground">{country.region}</span>
+                  <div key={country.id} className="p-3 bg-white rounded-lg border">
+                    <div className="flex items-center justify-between mb-1">
+                      <div className="flex items-center gap-3">
+                        <Globe className="h-4 w-4 text-primary" />
+                        <span className="font-medium text-sm">{country.name}</span>
+                        <span className="text-xs text-muted-foreground">{country.region}</span>
+                      </div>
+                      <Badge variant="outline" className={country.coverageStatus === 'pilot' ? 'text-primary border-primary/30 text-xs' : 'text-blue-600 border-blue-300 text-xs'}>
+                        {country.coverageStatus === 'pilot' ? 'Operational Pilot' : 'Data Platform'}
+                      </Badge>
                     </div>
-                    <div className="text-right">
-                      <div className="text-sm font-semibold">{(country.population / 1_000_000).toFixed(0)}M</div>
-                      <div className="text-xs text-muted-foreground">population</div>
-                    </div>
+                    <p className="text-xs text-muted-foreground ml-7">{country.coverageNote}</p>
                   </div>
                 ))}
               </div>

@@ -10,12 +10,13 @@ export const LAST_UPDATED = "April 2026";
 // ============================================================
 // COUNTRIES & REGIONS
 // ============================================================
+// coverageStatus: 'pilot' = active CHW network + facility mapping; 'data' = WHO/World Bank data integrated, forecasts generated
 export const COUNTRIES = [
-  { id: 1, name: "Kenya", code: "KE", capital: "Nairobi", population: 55_000_000, lat: -0.023, lng: 37.906, region: "East Africa" },
-  { id: 2, name: "Tanzania", code: "TZ", capital: "Dodoma", population: 63_000_000, lat: -6.369, lng: 34.889, region: "East Africa" },
-  { id: 3, name: "Uganda", code: "UG", capital: "Kampala", population: 48_000_000, lat: 1.373, lng: 32.290, region: "East Africa" },
-  { id: 4, name: "Rwanda", code: "RW", capital: "Kigali", population: 14_000_000, lat: -1.940, lng: 29.874, region: "East Africa" },
-  { id: 5, name: "Mozambique", code: "MZ", capital: "Maputo", population: 33_000_000, lat: -18.665, lng: 35.530, region: "Southern Africa" },
+  { id: 1, name: "Kenya", code: "KE", capital: "Nairobi", population: 55_000_000, lat: -0.023, lng: 37.906, region: "East Africa", coverageStatus: "pilot", coverageNote: "Operational pilot: Turkana County. 2,250 CHWs, 99,453 households, 167 facilities. County-level data for 10 counties." },
+  { id: 2, name: "Tanzania", code: "TZ", capital: "Dodoma", population: 63_000_000, lat: -6.369, lng: 34.889, region: "East Africa", coverageStatus: "data", coverageNote: "WHO GHO and World Bank climate data integrated. National-level disease forecasts generated." },
+  { id: 3, name: "Uganda", code: "UG", capital: "Kampala", population: 48_000_000, lat: 1.373, lng: 32.290, region: "East Africa", coverageStatus: "data", coverageNote: "WHO GHO and World Bank climate data integrated. National-level disease forecasts generated." },
+  { id: 4, name: "Rwanda", code: "RW", capital: "Kigali", population: 14_000_000, lat: -1.940, lng: 29.874, region: "East Africa", coverageStatus: "data", coverageNote: "WHO GHO and World Bank climate data integrated. National-level disease forecasts generated." },
+  { id: 5, name: "Mozambique", code: "MZ", capital: "Maputo", population: 33_000_000, lat: -18.665, lng: 35.530, region: "Southern Africa", coverageStatus: "data", coverageNote: "WHO GHO and World Bank climate data integrated. National-level disease forecasts generated." },
 ];
 
 // ============================================================

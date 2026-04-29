@@ -50,7 +50,7 @@ export default function About() {
               AIfluence exists to close the gap between climate data and community health action in sub-Saharan Africa. We build AI-powered early warning systems that give community health workers, district health officers, and national policymakers the intelligence they need to prevent climate-sensitive disease outbreaks before they happen — not after.
             </p>
             <p className="text-sm leading-relaxed text-muted-foreground mt-3">
-              Our platform is operational across Kenya, Tanzania, Uganda, Rwanda, and Mozambique, supporting 2,250 community health workers who collectively monitor 99,453 households. We have issued 64 outbreak alerts since inception, with an 87.8% prediction accuracy on 7-day malaria forecasts.
+              AIfluence processes WHO and World Bank climate-health data for 5 countries in East and Southern Africa, generating national-level disease forecasts for Kenya, Tanzania, Uganda, Rwanda, and Mozambique. Our operational pilot in Turkana County, Kenya, runs an active community surveillance network of 2,250 CHWs monitoring 99,453 households. The Turkana pilot has issued 64 outbreak alerts with an 87.8% prediction accuracy on 7-day malaria forecasts. The 4-country data platform is ready for community-level deployment as funding and partnerships are secured.
             </p>
           </CardContent>
         </Card>
